@@ -1,0 +1,26 @@
+
+/* font*/
+@font-face {
+	font-family: "PingFang HK";
+	src: url("//db.onlinewebfonts.com/t/ee5e0963d4f220cba32a5765cc4f9772.eot");
+	src: url("//db.onlinewebfonts.com/t/ee5e0963d4f220cba32a5765cc4f9772.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/ee5e0963d4f220cba32a5765cc4f9772.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/ee5e0963d4f220cba32a5765cc4f9772.woff") format("woff"), url("//db.onlinewebfonts.com/t/ee5e0963d4f220cba32a5765cc4f9772.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/ee5e0963d4f220cba32a5765cc4f9772.svg#PingFang HK") format("svg");
+}
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+	font-family: "PingFang HK";
+}
+
+
+h1{
+	font-family: "PingFang HK";
+}
+
+
+#modal .d-flex{
+	gap:100px;
+	font-family: "PingFang HK";
+	color: #FFFFFF;
+}
