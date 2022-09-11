@@ -13,32 +13,56 @@
 	<link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
 	<!-- JS -->
+	<script src="./assets/js/popper.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/js/bootstrap.min.js"></script>
 
 
 	<!-- CSS -->
-	<link href="./assets/css/style.css" rel="stylesheet">
+
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/css/bootstrap.min.css" rel="stylesheet">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
-
+	<link href="./assets/css/style.css" rel="stylesheet">
 
 </head>
 
 <body>
-	<!-- Top Logo/Nav -->
-	<nav class="navbar navbar-expand-md  mb-4">
-		<div class="container-fluid">
-			<a class="navbar-brand" href="#">
-				<img src="./assets/img/apple-touch-icon.png" alt="" width="46" height="48">
-			</a>
-			<div class="d-flex" role="modal">
-				<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#ModalMenu">
-					<i class="fa-solid fa-bars"></i>
-				</button>
-			</div>
-		</div>
+	<div class="bg-image img1"></div>
+	<div class="bg-image img2"></div>
+	<div class="bg-image img3"></div>
 
-	</nav>
+	<div class="fixed-content fixed-top">
+		<nav class="navbar navbar-expand-lg mb-4 ">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">
+					<img src="./assets/img/apple-touch-icon.png" alt="" width="46" height="48">
+				</a>
+				<div class="d-flex" role="modal">
+					<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#ModalMenu">
+						<i class="fa-solid fa-bars"></i>
+					</button>
+				</div>
+			</div>
+		</nav>
+		<div class="fixed-designed">
+			<h2>Designed to make our</h2>
+			<h2>lives better.</h2>
+			<h3>&nbsp;</h3>
+		</div>
+		<div class="fixed-see-my-work">
+			<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#ModalWork">
+				<h3 class="link-dark text-decoration-none">See My Work</h3>
+			</button>
+		</div>
+		<div class="fixed-footer">
+			<h3>I'm <b>Zhen Bi</b>. </h3>
+			<h3>Thanks for checking out my website.</h3>
+			<a href="https://www.behance.net/zhenbi" class="link-dark text-decoration-none">Behance</a> |
+			<a href="https://www.linkedin.com/in/zhen-bi-18b3621b5/" class="link-dark text-decoration-none">LinkedIn</a>
+			|
+			<a href="https://www.instagram.com/bizz826/" class="link-dark text-decoration-none">instagram</a> |
+			<a href="mailto:zb1120@g.rit.edu" class="link-dark text-decoration-none">Email</a>
+		</div>
+	</div>
 
 
 
@@ -47,42 +71,189 @@
 		<div class="modal fade" id="ModalMenu" tabindex="-1" aria-labelledby="exampleModalFullscreenLabel"
 			aria-hidden="true">
 			<div class="modal-dialog modal-fullscreen">
-				<div class="modal-content bg-dark" style="--bs-bg-opacity: .9;" >
+				<div class="modal-content bg-dark" style="--bs-bg-opacity: .9;">
 					<div class="modal-header">
 						<img src="./assets/img/apple-touch-icon-dark-mode.png" alt="" width="46" height="48">
-						<button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+						<button type="button" class="btn-close btn-close-white" data-bs-toggle="modal"
 							aria-label="Close"></button>
 					</div>
-					<div class="d-flex flex min-vh-100 justify-content-center align-items-center">
-						<h1><a href="#" class="link-light text-decoration-none">Work</a></h1>
-						<h1><a href="#" class="link-light text-decoration-none">Resume</a></h1>
-						<h1><a href="#" class="link-light text-decoration-none">About</a></h1>
+					<div class="modal-body ">
+						<div class="d-flex justify-content-center align-items-center ">
+							<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#ModalWork">
+								<h1 class="link-light text-decoration-none">Work</h1>
+							</button>
+							<button type="button" class="btn">
+								<h1><a href="./assets/files/resume.pdf"
+										class="link-light text-decoration-none">Resume</a></h1>
+							</button>
+							<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#ModalAbout">
+								<h1 class="link-light text-decoration-none">About</h1>
+							</button>
+						</div>
 					</div>
+					<div class="modal-footer">
+						<h1><a href="https://www.behance.net/zhenbi" class="link-light text-decoration-none"><img
+									src="./assets/img/icon_behance@3x.png" alt="" width="24" height="24"></a></h1>
+						<h1>&nbsp;</h1>
+						<h1><a href="https://www.linkedin.com/in/zhen-bi-18b3621b5/"
+								class="link-light text-decoration-none"><img src="./assets/img/icon_Linkin@3x.png"
+									alt="" width="24" height="24"></a></h1>
+						<h1>&nbsp;</h1>
+						<h1><a href="https://www.instagram.com/bizz826/" class="link-light text-decoration-none"><img
+									src="./assets/img/icon_Ins@3x.png" alt="" width="24" height="24"></a></h1>
+						<h1>&nbsp;</h1>
+						<h1><a href="mailto:zb1120@g.rit.edu" class="link-light text-decoration-none"><img
+									src="./assets/img/icon_Google@3x.png" alt="" width="24" height="24"></a></h1>
 
+						<h1>&nbsp;</h1>
+					</div>
 				</div>
 			</div>
 		</div>
 	</modal>
 
-	<div class="container" id="First">
+	<modal id="modal1">
+		<div class="modal fade" id="ModalWork" tabindex="-1" aria-labelledby="exampleModalFullscreenLabel"
+			aria-hidden="true">
+			<div class="modal-dialog modal-fullscreen">
+				<div class="modal-content bg-dark" style="--bs-bg-opacity: .9;">
+					<div class="modal-header">
+						<img src="./assets/img/apple-touch-icon-dark-mode.png" alt="" width="46" height="48">
+						<button type="button" class="btn-close btn-close-white" data-bs-toggle="modal"
+							data-bs-target="#ModalMenu" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<div class="d-flex justify-content-center ">
+							<nav id="WorkShowScroll"
+								class="navbar fixed-content navbar-dark flex-column align-items-stretch p-3">
+								<nav class="nav nav-pills flex-column">
+									<a class="nav-link" href="#UIUX">
+										<h1 class="link-light text-decoration-none">UI/UX</h1>
+									</a>
+									<a class="nav-link" href="#Visual">
+										<h1 class="link-light text-decoration-none">Visual</h1>
+									</a>
+									<a class="nav-link" href="#3D">
+										<h1 class="link-light text-decoration-none">3D</h1>
+									</a>
+									<a class="nav-link" href="#More">
+										<h1 class="link-light text-decoration-none">More</h1>
+									</a>
+								</nav>
+							</nav>
 
-	</div>
-	<div class="container" id="Second">
+							<div data-bs-spy="scroll" data-bs-target="#WorkShowScroll" data-bs-offset="0" tabindex="0">
+								<h4 id="UIUX"></h4>
+								<a href="./BusIsComing.html"  class="link-dark text-decoration-none">
+									<div class="card mb-3">
+										<img src="./assets/img/Work1.png" class="card-img-top">
+										<div class="card-body">
+											<h5 class="card-title">Bus Is coming </h5>
+											<p class="card-text">2022</p>
+										</div>
+									</div>
+								</a>
+								<a href="./WinterOlympic.html"  class="link-dark text-decoration-none">
+									<div class="card mb-3">
+										<img src="./assets/img/Work2.png" class="card-img-top">
+										<div class="card-body">
+											<h5 class="card-title">Design Exploration With the Theme of Winter Olympics
+											</h5>
+											<p class="card-text">2022</p>
+										</div>
+									</div>
+								</a>
+								<a href="./QQBrowser.html"  class="link-dark text-decoration-none">
+									<div class="card mb-3">
+										<img src="./assets/img/Work3.png" class="card-img-top">
+										<div class="card-body">
+											<h5 class="card-title">Tencent QQ Browser Search Wxperience Upgrade </h5>
+											<p class="card-text">2021</p>
+										</div>
+									</div>
+								</a>
+								<h4 id="Visual"></h4>
+								<a href="./SixDaysStory.html"  class="link-dark text-decoration-none">
+									<div class="card mb-3">
+										<img src="./assets/img/Work4.png" class="card-img-top">
+										<div class="card-body">
+											<h5 class="card-title">Six Days Story </h5>
+											<p class="card-text">2020</p>
+										</div>
+									</div>
+								</a>
+								<h4 id="3D"></h4>
+								<a href="./MyDaily.html"  class="link-dark text-decoration-none">
+									<div class="card mb-3">
+										<img src="./assets/img/Work5.png" class="card-img-top">
+										<div class="card-body">
+											<h5 class="card-title">My Daily </h5>
+											<p class="card-text">2020</p>
+										</div>
+									</div>
+								</a>
+								<h4 id="More"></h4>
+								<a href="./Blossom.html"  class="link-dark text-decoration-none">
+									<div class="card mb-3">
+										<img src="./assets/img/Work6.png" class="card-img-top">
+										<div class="card-body">
+											<h5 class="card-title">Blossom</h5>
+											<p class="card-text">2019</p>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
 
-	</div>
-	<div class="container" id="Third">
+				</div>
+			</div>
+		</div>
+		</div>
+	</modal>
 
-	</div>
-	<div class="container" id="Fourth">
+	<modal id="modal2">
+		<div class="modal fade" id="ModalAbout" tabindex="-1" aria-labelledby="exampleModalFullscreenLabel"
+			aria-hidden="true">
+			<div class="modal-dialog modal-fullscreen">
+				<div class="modal-content bg-dark" style="--bs-bg-opacity: .9;">
+					<div class="modal-header">
+						<img src="./assets/img/apple-touch-icon-dark-mode.png" alt="" width="46" height="48">
+						<button type="button" class="btn-close btn-close-white" data-bs-toggle="modal"
+							data-bs-target="#ModalMenu" aria-label="Close"></button>
+					</div>
+					<div class="modal-body ">
+						<div class="d-flex justify-content-center align-items-center ">
 
-	</div>
-	<div class="container" id="Fifth">
+							<h4 class="link-light text-decoration-none">
+								<p>
+									Hi, I am Zhen Bi, a second-year graduate student at Rochester Institute of
+									Technology. Majoring in Visual Communication Design and mainly focusing on UI/UX
+									design. Now, I'm seeking a spring 2023 co-op or internship.
+								</p>
+								<p>
+									As a UI/UX designer, I always have the heart to keep learning and exploring new tech
+									and trends, and I want to design products that can meet the needs of the times. I
+									also pay close attention to users' needs and wish my design to reduce users' anxiety
+									and difficulties in using the products and learn to use the new products more
+									quickly, especially for the elderly. I hope that my design can make the world a
+									little better.
+								</p>
+								<p>
+									I have some working experience as a UI designer before, and I can quickly integrate
+									into the team and participate in the entire project process. From the initial
+									proposal, background and user research, UX and UI design, and finally, communication
+									with the developers to ensure the completion of the project.
+								</p>
+								</h1>
+						</div>
+					</div>
 
-	</div>
-
-	<div class="container" id="Work">
-
-	</div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</modal>
 
 
 

@@ -1,8 +1,7 @@
-
 /* font*/
 @font-face {
 	font-family: "PingFang HK";
-	src: url("./assets/fonts/PingFangRegular.tff");
+	src: url("../fonts/PingFangRegular.ttf");
 }
 
 /*--------------------------------------------------------------
@@ -12,19 +11,106 @@ body {
 	font-family: "PingFang HK";
 
 }
+body, html {
+	height: 100%;
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  * {
+	box-sizing: border-box;
+  }
 
-
-h1{
+h1 {
 	font-family: "PingFang HK";
+	font-size: 5vw;
+
+
 }
 
-.navbar{
-	left:0px;
-	top: 50px;
-	}
+.bg-image {
+	/* Full height */
+	height: 100%;
 
-#modal .d-flex{
-	gap:100px;
+	/* Center and scale the image nicely */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:cover;
+	
+}
+
+.fixed-content {
+	margin-left: 10vh;
+	margin-right: 10vh;
+	margin-top: 5vh;
+	
+	z-index: 2;
+	top: 0%;
+	left: 0%;
+
+}
+h2{
+	font-family: PingFang HK;
+	font-size: 48px;
+	font-weight: 500;
+	line-height: 67px;
+}
+h3{
+	font-family: PingFang HK;
+font-size: 32px;
+font-weight: 400;
+line-height: 45px;
+
+}
+
+
+.fixed-see-my-work{
+	font-family: PingFang HK;
+	font-size: 48px;
+	font-weight: 500;
+	line-height: 67px;
+}
+
+.fixed-footer{
+	font-family: PingFang HK;
+	margin-top: 35vh;
+}
+
+#modal .d-flex {
+	gap: 100px;
 	font-family: "PingFang HK";
 	color: #FFFFFF;
+	min-height: 60vh !important;
+	overflow: hidden;
 }
+
+
+.modal-header {
+	margin-top: 5vh;
+	margin-left: 10vh;
+	margin-right: 10vh;
+}
+
+.modal-body {
+	margin-left: 10vh;
+	margin-right: 10vh;
+	overflow: hidden;
+}
+
+.modal-footer {
+	margin-left: 10vh;
+	margin-right: 10vh;
+}
+
+.img1 {
+	background-image: url("../img/background1.png");
+}
+
+.img2 {
+	background-image: url("../img/background2.png");
+}
+
+.img3 {
+	background-image: url("../img/background3.png");
+}
+
